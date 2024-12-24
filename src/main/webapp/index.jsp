@@ -6,10 +6,18 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <h2>Vietnamese Dictionary</h2>
-        <form action="/translate" method="post">
-            <input type="text" name="txtSearch" placeholder="Enter your word: "/>
-            <input type = "submit" id = "submit" value = "Search"/>
+        <h2>calculate Discount</h2>
+        <form action="calculate Discount" method="POST">
+            <label for="description">Product Description</label>
+            <input type="text" id="description" name="description" required>
+
+            <label for="listPrice">List Price</label>
+            <input type="number" id="listPrice" name="listPrice" step="0.01" required>
+
+            <label for="discountPercent">Discount Percent</label>
+            <input type="number" id="discountPercent" name="discountPercent" step="0.01" required>
+
+            <button type="submit">Calculate Discount</button>
         </form>
     </body>
 </html>
